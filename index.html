@@ -4,32 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0b1324">
-<title>Tahlil — 70,000 in Memory of Dad</title>
+<title>Tahlil — In Memory of Dad</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top,#18345c,#08111f 65%);color:#fff;display:flex;justify-content:center;padding:18px}
-.memorial{text-align:center;margin:0 auto 24px}
-.memorial-title{font-size:21px;font-weight:750;margin-top:13px}
+body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top,#18345c,#08111f 65%);color:#fff;display:flex;justify-content:center;padding:14px}
+.card{width:min(560px,100%);margin:auto;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.14);border-radius:26px;padding:22px 16px;box-shadow:0 25px 80px rgba(0,0,0,.35);backdrop-filter:blur(18px)}
+.memorial{text-align:center;margin:0 auto 20px}
+.memorial-title{font-size:20px;font-weight:750;margin-top:8px}
 .memorial-text{font-size:13px;color:#b9c6d8;line-height:1.55;margin-top:5px}
-.card{width:min(460px,100%);margin:auto;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.14);border-radius:30px;padding:28px 22px;box-shadow:0 25px 80px rgba(0,0,0,.35);backdrop-filter:blur(18px)}
-h1{text-align:center;font-size:29px;margin:0}
-.sub{text-align:center;color:#b9c6d8;margin:7px 0 27px}
-.count{text-align:center;font-size:60px;font-weight:800;line-height:1.05}
-.target{text-align:center;color:#b9c6d8;margin:8px 0 23px}
-.track{height:18px;background:rgba(255,255,255,.12);border-radius:50px;overflow:hidden}
-.bar{height:100%;width:0;background:linear-gradient(90deg,#fff,#8ec5ff);transition:width .35s}
-.percent{text-align:center;margin:10px 0 25px;font-weight:700;color:#dce8f5}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-button{border:0;border-radius:16px;padding:16px 8px;font-size:18px;font-weight:750;cursor:pointer;background:#fff;color:#0b1324}
-button:active{transform:scale(.97)}
-.blue{background:#bfdbfe}
-.green{background:#22c55e;color:white}
-.custom{display:flex;gap:8px;margin-top:10px}
-.custom input{flex:1;min-width:0;border:0;border-radius:16px;padding:15px;font-size:17px}
-.custom button{padding:0 20px}
-.status{text-align:center;margin:20px 0 0;color:#aebed2;font-size:13px}
-.dua{margin-top:20px;padding:16px;border-radius:17px;background:rgba(255,255,255,.07);text-align:center;line-height:1.55;color:#dbe6f2}
-.note{text-align:center;color:#71839a;font-size:11px;margin-top:16px}
+h1{text-align:center;font-size:26px;margin:14px 0 4px}
+.sub{text-align:center;color:#b9c6d8;margin:4px 0 22px;font-size:14px}
+.item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:14px;margin-bottom:12px}
+.item-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:10px}
+.item-name{font-size:15px;font-weight:700;line-height:1.35;flex:1}
+.item-translit{font-size:11px;color:#8fa5c1;font-style:italic;margin-top:3px;line-height:1.4;display:block}
+.item-count{font-size:15px;font-weight:800;color:#8ec5ff;text-align:right;white-space:nowrap}
+.item-count small{color:#7d90a8;font-weight:500;font-size:11px}
+.track{height:10px;background:rgba(255,255,255,.1);border-radius:50px;overflow:hidden;margin-bottom:10px}
+.bar{height:100%;width:0;background:linear-gradient(90deg,#fff,#8ec5ff);transition:width .35s;border-radius:50px}
+.bar.done{background:linear-gradient(90deg,#4ade80,#22c55e)}
+.btns{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.btns button{border:0;border-radius:11px;padding:10px 4px;font-size:14px;font-weight:750;cursor:pointer;background:rgba(255,255,255,.9);color:#0b1324}
+.btns button:active{transform:scale(.96)}
+.btns .custom-btn{background:rgba(191,219,254,.85)}
+.percent-tag{text-align:right;font-size:11px;color:#8fa5c1;margin-top:-6px;margin-bottom:8px}
+footer{text-align:center;margin-top:22px;color:#71839a;font-size:11px;line-height:1.6}
+.share-btn{width:100%;margin-top:18px;border:0;border-radius:14px;padding:14px;font-size:15px;font-weight:750;cursor:pointer;background:#22c55e;color:#fff}
+.status{text-align:center;margin:16px 0 0;color:#aebed2;font-size:12px}
 </style>
 </head>
 <body>
@@ -37,33 +38,18 @@ button:active{transform:scale(.97)}
 
 <div class="memorial">
   <div class="memorial-title">In loving memory of Dad 🤍</div>
-  <div class="memorial-text">70,000 Tahlil for his soul<br>May Allah accept every Tahlil and grant him Jannatul Firdaus. Ameen.</div>
+  <div class="memorial-text">Tahlil for his soul<br>May Allah accept every recitation and grant him Jannatul Firdaus. Ameen.</div>
 </div>
 
 <h1>🤲 Tahlil</h1>
-<div class="sub">Our collective goal — 70,000</div>
-<div class="count" id="count">0</div>
-<div class="target">Tahlil completed</div>
-<div class="track"><div class="bar" id="bar"></div></div>
-<div class="percent" id="percent">0% completed</div>
+<div class="sub">Our collective goals</div>
 
-<div class="grid">
-<button class="blue" onclick="add(1)">+1</button>
-<button class="blue" onclick="add(10)">+10</button>
-<button onclick="add(100)">+100</button>
-<button onclick="add(1000)">+1,000</button>
-</div>
+<div id="items"></div>
 
-<div class="custom">
-<input id="custom" type="number" min="1" placeholder="Enter amount">
-<button onclick="customAdd()">Add</button>
-</div>
-
-<button class="green" style="width:100%;margin-top:10px" onclick="share()">Share on WhatsApp</button>
-
+<button class="share-btn" onclick="share()">Share on WhatsApp</button>
 <div class="status" id="status">Connecting…</div>
-<div class="dua">May Allah accept every Tahlil and reward everyone who participates. 🤍</div>
-<div class="note">One shared counter • Target: 70,000</div>
+
+<footer>One shared page • Every recitation counts 🤍</footer>
 </main>
 
 <script type="module">
@@ -81,42 +67,108 @@ const firebaseConfig = {
   measurementId: "G-ZPDCM0RH80"
 };
 
-const TARGET=70000;
-const app=initializeApp(firebaseConfig);
-const db=getDatabase(app);
-const countRef=ref(db,"tahlil/count");
+const items = [
+  { key: "khatm_quran",  name: "Khatam-Ul-Qur'aan Shareef", target: 1 },
+  { key: "yasin",        name: "Surah Yasin Shareef",       target: 141 },
+  { key: "mulk",         name: "Surah Al-Mulk (Tabarakallazi)", target: 141 },
+  { key: "durood_1",     name: "Durood Shareef",            target: 35000 },
+  { key: "kalimah_1",    name: "1er Kaleemah — Twayyebah",
+    translit: "La-Ilaaha Illalaahou Mohammadour-Rassoulullah", target: 70000 },
+  { key: "kalimah_3",    name: "3ème Kaleemah — Tamjeed",
+    translit: "Subhanallahi, walhamdu lillahi, wa la ilaha illallahu, Wallahu akbar, Wa la hawla wa la quwwata illa billahil-aliyyil-azim", target: 70000 },
+  { key: "ikhlas",       name: "Surah Al-Ikhlas (Qul huwal laahu ahad)", target: 70000 },
+  { key: "durood_2",     name: "Durood Shareef",            target: 35000 },
+  { key: "rad",          name: "Surah Ar-Ra'd (13ème Siparah)", target: 3 },
+  { key: "ahad_namah",   name: "Ahad Namah",                target: 11 },
+  { key: "rabbannah",    name: "40 Duah-E-Rabbannah",       target: 11 }
+];
 
-const countEl=document.getElementById("count");
-const barEl=document.getElementById("bar");
-const percentEl=document.getElementById("percent");
-const statusEl=document.getElementById("status");
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
 
-onValue(countRef,(snap)=>{
-  const count=Math.max(0,Number(snap.val()||0));
-  countEl.textContent=count.toLocaleString();
-  const p=Math.min(100,count/TARGET*100);
-  barEl.style.width=p+"%";
-  percentEl.textContent=(p>=100?"100":p.toFixed(1))+"% completed";
-  statusEl.textContent=count>=TARGET ? "🎉 70,000 completed — Alhamdulillah!" : "🟢 Live shared counter";
-},(err)=>{
-  statusEl.textContent="Unable to connect. Check the config.";
-  console.error(err);
+const itemsEl = document.getElementById("items");
+const statusEl = document.getElementById("status");
+
+const itemEls = {};
+
+items.forEach(it => {
+  const div = document.createElement("div");
+  div.className = "item";
+  div.innerHTML = `
+    <div class="item-top">
+      <div class="item-name">${it.name}${it.translit ? <span class="item-translit">${it.translit}</span> : ""}</div>
+      <div class="item-count" id="cnt_${it.key}">0<small> / ${it.target.toLocaleString()}</small></div>
+    </div>
+    <div class="track"><div class="bar" id="bar_${it.key}"></div></div>
+    <div class="percent-tag" id="pct_${it.key}">0%</div>
+    <div class="btns">
+      <button class="custom-btn" data-key="${it.key}" data-amt="1">+1</button>
+      <button class="custom-btn" data-key="${it.key}" data-amt="5">+5</button>
+      <button class="custom-btn" data-key="${it.key}" data-amt="50">+50</button>
+      <button class="custom-btn" data-key="${it.key}" data-amt="500">+500</button>
+    </div>`;
+  itemsEl.appendChild(div);
+  itemEls[it.key] = {
+    cnt: document.getElementById(cnt_${it.key}),
+    bar: document.getElementById(bar_${it.key}),
+    pct: document.getElementById(pct_${it.key})
+  };
 });
 
-window.add=async function(n){
-  if(!Number.isFinite(n)||n<1)return;
-  try{await runTransaction(countRef,c=>Math.min(TARGET,Number(c||0)+n));}
-  catch(e){alert("Could not update counter.");}
-};
-window.customAdd=function(){
-  const n=Number(document.getElementById("custom").value);
-  if(n>0){window.add(n);document.getElementById("custom").value="";}
-};
-window.share=async function(){
-  const count=Number(countEl.textContent.replace(/,/g,""))||0;
-  const text=`🤲 Tahlil — ${count.toLocaleString()} / 70,000 completed\n\nEvery Tahlil counts. May Allah accept it from everyone. 🤍`;
-  if(navigator.share){try{await navigator.share({title:"Tahlil — 70,000",text})}catch(e){}}
-  else if(navigator.clipboard){await navigator.clipboard.writeText(text);alert("Copied!");}
+itemsEl.addEventListener("click", e => {
+  const btn = e.target.closest("button[data-key]");
+  if (!btn) return;
+  add(btn.dataset.key, Number(btn.dataset.amt));
+});
+
+items.forEach(it => {
+  const itemRef = ref(db, "tahlil/" + it.key);
+  onValue(itemRef, snap => {
+    const count = Math.max(0, Number(snap.val() || 0));
+    const p = Math.min(100, count / it.target * 100);
+    const el = itemEls[it.key];
+    el.cnt.innerHTML = count.toLocaleString() + <small> / ${it.target.toLocaleString()}</small>;
+    el.bar.style.width = p + "%";
+    el.pct.textContent = (p >= 100 ? "100" : p.toFixed(1)) + "%";
+    if (count >= it.target) {
+      el.bar.classList.add("done");
+      el.pct.textContent = "✅ Completed — Alhamdulillah!";
+      el.pct.style.color = "#4ade80";
+    } else {
+      el.bar.classList.remove("done");
+      el.pct.style.color = "";
+    }
+    statusEl.textContent = "🟢 Live shared page";
+  }, err => {
+    statusEl.textContent = "Unable to connect. Please refresh.";
+    console.error(err);
+  });
+});
+
+async function add(key, n) {
+  if (!Number.isFinite(n) || n < 1) return;
+  const it = items.find(i => i.key === key);
+  if (!it) return;
+  const itemRef = ref(db, "tahlil/" + key);
+  try {
+    await runTransaction(itemRef, c => Math.min(it.target, Number(c || 0) + n));
+  } catch (e) {
+    alert("Could not update the counter. Please try again.");
+  }
+}
+
+window.share = async function () {
+  const lines = items.map(it => {
+    const val = Number(itemEls[it.key].cnt.textContent.split("/")[0].replace(/,/g, "").trim()) || 0;
+    return • ${it.name}: ${val.toLocaleString()} / ${it.target.toLocaleString()};
+  });
+  const text =🤲 Tahlil — In memory of Dad\n\n${lines.join("\n")}\n\nMay Allah accept every recitation. 🤍`;
+  if (navigator.share) {
+    try { await navigator.share({ title: "Tahlil", text }); } catch (e) {}
+  } else if (navigator.clipboard) {
+    await navigator.clipboard.writeText(text);
+    alert("Copied! Paste into WhatsApp.");
+  }
 };
 </script>
 </body>
